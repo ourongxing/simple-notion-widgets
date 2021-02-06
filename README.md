@@ -3,21 +3,21 @@
 > Based on [Aplayer](https://github.com/MoePlayer/APlayer) & [MetingJS](https://github.com/metowolf/MetingJS)
 
 ![](./img/1.png)
-Just use `https://simple-notion-widgets.netlify.app/music-player/?server=tencent&type=playlist&id=7888484143`
+Just use `https://simple-notion-widgets.netlify.app/music-player?auto=https://y.qq.com/n/yqq/playlist/7888484143.html`
 ### Quick Start
-> You must use [QQ Music](https://y.qq.com/) or [NetEase Cloud Music](https://music.163.com/) on your computer to get the URL.
+> You must use [QQ Music](https://y.qq.com/) or [NetEase Cloud Music](https://music.163.com/) on your computer to get the URL.  Using QQ music may be easier.
 
 - [NetEase Cloud Music：Song]，https://music.163.com/#/song?id=28754103
   ```md
   https://simple-notion-widgets.netlify.app/music-player
-  ?sever=netease
+  ?server=netease
   &type=song
   &id=28754103
   ```
 - [NetEase Cloud Music：Playlist]，https://music.163.com/#/playlist?id=60198
   ```md
   https://simple-notion-widgets.netlify.app/music-player
-  ?sever=netease
+  ?server=netease
   &type=playlist
   &id=60198
   ```
