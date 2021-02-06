@@ -7,37 +7,25 @@ Just use `https://simple-notion-widgets.netlify.app/music-player?auto=https://y.
 ### Quick Start
 > You must use [QQ Music](https://y.qq.com/) or [NetEase Cloud Music](https://music.163.com/) on your computer to get the URL.  Using QQ music may be easier.
 
-- [NetEase Cloud Music：Song]，https://music.163.com/#/song?id=28754103
+- https://music.163.com/#/song?id=28754103
   ```md
-  https://simple-notion-widgets.netlify.app/music-player
-  ?server=netease
-  &type=song
-  &id=28754103
+  https://simple-notion-widgets.netlify.app/music-player?server=netease&type=song&id=28754103
   ```
-- [NetEase Cloud Music：Playlist]，https://music.163.com/#/playlist?id=60198
+- https://music.163.com/#/playlist?id=60198
   ```md
-  https://simple-notion-widgets.netlify.app/music-player
-  ?server=netease
-  &type=playlist
-  &id=60198
+  https://simple-notion-widgets.netlify.app/music-player?server=netease&type=playlist&id=60198
   ```
-- [QQ Music：Song]，https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html
+- https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html
   ```md
-  https://simple-notion-widgets.netlify.app/music-player
-  ?auto=https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html
+  https://simple-notion-widgets.netlify.app/music-player?auto=https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html
   ```
-- [QQ Music：Playlist]，https://y.qq.com/n/yqq/playlist/7888484143.html
+- https://y.qq.com/n/yqq/playlist/7888484143.html
   ```md
-  https://simple-notion-widgets.netlify.app/music-player
-  ?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
+  https://simple-notion-widgets.netlify.app/music-player?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
   ```
 - If your music needs VIP, you can use this method to custom.
   ```md
-  https://simple-notion-widgets.netlify.app/music-player
-  ?name=rainymood
-  &artist=rainymood
-  &url=https://rainymood.com/audio1110/0.m4a
-  &cover=https://rainymood.com/i/badge.jpg
+  https://simple-notion-widgets.netlify.app/music-player?name=rainymood&artist=rainymood&url=https://rainymood.com/audio1110/0.m4a&cover=https://rainymood.com/i/badge.jpg
   ```
 
 ### Option
