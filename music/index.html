@@ -16,12 +16,22 @@
     <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
   </head>
   <body>
-    <meting-js
-      server="tencent"
-      type="playlist"
-      id="7888484143"
-      list-max-height="95px"
-      >
-    </meting-js>
+    <script charset="utf-8">
+      const paras = (() => {
+        const query = window.location.search.substring(1);
+        const vars = query.split("&");
+        let paras = {};
+        for (let i=0;i<vars.length;i++) {
+          const pair = vars[i].split("=");
+          paras[pair[0]] = pair[1];
+        }
+        return paras;
+      })()
+      const meting = document.createElement("meting-js");
+      for (let i in paras){
+        meting.setAttribute(i, paras[i])
+      }
+      document.body.appendChild(meting)
+    </script>
   </body>
 </html>
