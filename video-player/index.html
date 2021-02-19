@@ -4,16 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Music Player</title>
+    <title>Video Player</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
     <style type="text/css">
-      html, body, .aplayer{
+      html, body, #dplayer{
         margin: 0;
         padding: 0;
       }
     </style>
   </head>
   <body>
+    <div id="dplayer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/dplayer@1.26.0/dist/DPlayer.min.js"></script>
     <script charset="utf-8">
       const paras = (() => {
         const query = window.location.search.substring(1);
@@ -21,17 +23,21 @@
         let paras = {};
         for (let i=0;i<vars.length;i++) {
           const pair = vars[i].split("=");
-          paras[pair[0]] = pair[1];
+          if(pair[0].indexOf('.') != -1) {
+            const v = pair[0].split(".");
+            if(!paras[v[0]]){
+              paras[v[0]] = {
+                [v[1]]: pair[1]
+              };
+            }
+            else paras[v[0]][v[1]] = pair[1];
+          }
+          else paras[pair[0]] = pair[1];
         }
         return paras;
-      })()
-      const meting = document.createElement("meting-js");
-      for (let i in paras){
-        meting.setAttribute(i, paras[i])
-      }
-      document.body.appendChild(meting)
+      })();
+      const options = Object.assign({container: document.getElementById('dplayer')}, paras);
+      const dp = new DPlayer(options)
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
   </body>
 </html>
