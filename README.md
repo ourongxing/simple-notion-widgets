@@ -1,22 +1,22 @@
-# Notion Widgets With [Netlify](https://app.netlify.com/)
+# Notion Widgets With [vercel](https://vercel.com/)
 ## 1. Music Player
 > Based on [Aplayer](https://github.com/MoePlayer/APlayer) & [MetingJS](https://github.com/metowolf/MetingJS)
 
 ![](./img/1.png)
-Just use https://simple-notion-widgets.netlify.app/music-player?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
+Just use https://simple-notion-widgets.vercel.app/music-player?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
 
 ### Quick Start
 > You must use [QQ Music](https://y.qq.com/) or [NetEase Cloud Music](https://music.163.com/) on Web to get the URL.  Using QQ music may be easier.
 - https://music.163.com/#/song?id=28754103
-  - https://simple-notion-widgets.netlify.app/music-player?server=netease&type=song&id=28754103
+  - https://simple-notion-widgets.vercel.app/music-player?server=netease&type=song&id=28754103
 - https://music.163.com/#/playlist?id=60198
-  - https://simple-notion-widgets.netlify.app/music-player?server=netease&type=playlist&id=60198
+  - https://simple-notion-widgets.vercel.app/music-player?server=netease&type=playlist&id=60198
 - https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html
-  - https://simple-notion-widgets.netlify.app/music-player?auto=https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html
+  - https://simple-notion-widgets.vercel.app/music-player?auto=https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html
 - https://y.qq.com/n/yqq/playlist/7888484143.html
-  - https://simple-notion-widgets.netlify.app/music-player?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
+  - https://simple-notion-widgets.vercel.app/music-player?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
 - If you want to use paid songs, you may need to find resources yourself. **Any links are not allowed to appear \ and &**, otherwise you need to use shortening link services, such as [suowo.cn](https://suowo.cn/).
-  - https://simple-notion-widgets.netlify.app/music-player?name=rainymood&artist=rainymood&url=https://rainymood.com/audio1110/0.m4a&cover=https://rainymood.com/i/badge.jpg
+  - https://simple-notion-widgets.vercel.app/music-player?name=rainymood&artist=rainymood&url=https://rainymood.com/audio1110/0.m4a&cover=https://rainymood.com/i/badge.jpg
 
 ### Option
 
