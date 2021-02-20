@@ -42,7 +42,6 @@ Just use https://simple-notion-widgets.netlify.app/music-player?auto=https://y.q
 
 ## 2. Video Player
 > Based on [Dplayer](https://github.com/MoePlayer/DPlayer)
-
 ![](./img/1.png)
 Just use https://simple-notion-widgets.netlify.app/video-player?video.url=https://1drv.ws/v/s!Aqj17zg0iQ5Sg9waDXVBOoL6iYDAww&video.pic=
 
