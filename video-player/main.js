@@ -34,7 +34,10 @@ if (video.url) {
   (async () => {
     await fetch("https://bili-api.vercel.app/api/v0/video_info?bvid=" + video.bvid)
       .then(res => res.json())
-      .then(res => video.pic = res.data.picture.replace(/http/, "https"))
+      .then(res => res.data.picture)
+      .then(res => {
+        video.pic = res.replace(/http/, "https")
+      })
     await fetch("https://bili-api.vercel.app/api/v0/acg_video/list?bvid=" + video.bvid)
       .then(res => res.json())
       .then(res => video.cid = res.data[video.page].cid)
