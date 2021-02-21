@@ -36,7 +36,8 @@ if (video.url) {
       .then(res => res.json())
       .then(res => res.data.picture)
       .then(res => {
-        video.pic = res.replace(/http/, "https")
+        // video.pic = res.replace(/http/, "https")
+        video.pic = res
       })
     await fetch("https://bili-api.vercel.app/api/v0/acg_video/list?bvid=" + video.bvid)
       .then(res => res.json())
@@ -46,7 +47,8 @@ if (video.url) {
       .then(res => video.direct = res.data[0].url)
     const picPre = () => {
       const Img = document.createElement("img");
-      Img.setAttribute("src", video.pic)
+      Img.setAttribute("src", video.pic);
+      Img.crossOrigin = '';
       Img.style.display = "none";
       document.body.appendChild(Img)
     }
