@@ -27,17 +27,17 @@ if (video.url) {
     video.bvid = video.url.split("video/")[1];
     video.page = 0;
   }
+
+  if (video.bvid.indexOf("/") != -1) {
+    video.bvid = video.bvid.substring(0, video.bvid.length - 1)
+  }
   (async () => {
     await fetch("https://bili-api.vercel.app/api/v0/video_info?bvid=" + video.bvid)
       .then(res => res.json())
       .then(res => video.pic = res.data.picture)
     await fetch("https://bili-api.vercel.app/api/v0/acg_video/list?bvid=" + video.bvid)
       .then(res => res.json())
-      // .then(res => video.cid = res.data[video.page].cid)
-      .then(res => {
-        console.log(res)
-        video.cid = res.data[video.page].cid
-      })
+      .then(res => video.cid = res.data[video.page].cid)
     await fetch(`https://bili-api.vercel.app/api/v0/acg_video/playurl?bvid=${video.bvid}&cid=${video.cid}&type=mp4`)
       .then(res => res.json())
       .then(res => video.direct = res.data[0].url)
@@ -56,4 +56,8 @@ if (video.url) {
     const options = Object.assign({ container: document.getElementById('dplayer') }, paras);
     const dp = await new DPlayer(options)
   })()
+}
+else {
+  const options = Object.assign({ container: document.getElementById('dplayer') }, paras);
+  const dp = new DPlayer(options)
 }
