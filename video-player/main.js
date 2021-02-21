@@ -55,7 +55,7 @@ if (video.url) {
       paras.video = {}
     }
     paras.video.url = video.direct;
-    paras.video.pic = video.pic;
+    // paras.video.pic = video.pic;
     const options = Object.assign({ container: document.getElementById('dplayer') }, paras);
     const dp = await new DPlayer(options)
   })()
