@@ -1,4 +1,4 @@
-# Notion Widgets With [vercel](https://vercel.com/)
+# Notion Widgets With [Vercel](https://vercel.com/)
 ## 1. Music Player
 > Based on [Aplayer](https://github.com/MoePlayer/APlayer) & [MetingJS](https://github.com/metowolf/MetingJS)
 

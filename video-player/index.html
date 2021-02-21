@@ -17,28 +17,8 @@
   <body>
     <div id="dplayer"></div>
     <script src="https://cdn.jsdelivr.net/npm/dplayer@1.26.0/dist/DPlayer.min.js"></script>
+    <script src="./main.js"></script>
     <script charset="utf-8">
-      const paras = (() => {
-        const query = window.location.search.substring(1);
-        const vars = query.split("&");
-        let paras = {};
-        for (let i=0;i<vars.length;i++) {
-          const pair = vars[i].split("=");
-          if(pair[0].indexOf('.') != -1) {
-            const v = pair[0].split(".");
-            if(!paras[v[0]]){
-              paras[v[0]] = {
-                [v[1]]: pair[1]
-              };
-            }
-            else paras[v[0]][v[1]] = pair[1];
-          }
-          else paras[pair[0]] = pair[1];
-        }
-        return paras;
-      })();
-      const options = Object.assign({container: document.getElementById('dplayer')}, paras);
-      const dp = new DPlayer(options)
     </script>
   </body>
 </html>
