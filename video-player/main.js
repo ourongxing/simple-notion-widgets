@@ -47,7 +47,6 @@ if (video.url) {
     const picPre = () => {
       const Img = document.createElement("img");
       Img.setAttribute("src", video.pic);
-      Img.crossOrigin = '';
       Img.style.display = "none";
       document.body.appendChild(Img)
     }
