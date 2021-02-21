@@ -1,4 +1,3 @@
-// 获取 Url 参数
 const video = {};
 const paras = {};
 const query = window.location.search.substring(1);

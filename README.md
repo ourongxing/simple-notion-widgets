@@ -41,5 +41,5 @@ Just use https://simple-notion-widgets.vercel.app/music-player?auto=https://y.qq
 |storage-name     |`metingjs`    |localStorage key that store player setting|
 
 ## 2. Video Player
-> Based on [Dplayer](https://github.com/MoePlayer/DPlayer)
+> Based on [Dplayer](https://github.com/MoePlayer/DPlayer) & [bilili](https://github.com/SigureMo/bilili)
 Not very useful for now.
