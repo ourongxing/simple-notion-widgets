@@ -40,7 +40,7 @@ if (video.url) {
       .then(res => video.cid = res.data[video.page].cid)
     await fetch(`https://bili-api.vercel.app/api/v0/acg_video/playurl?bvid=${video.bvid}&cid=${video.cid}&type=mp4`)
       .then(res => res.json())
-      .then(res => video.direct = res.data[0].url)
+      .then(res => video.direct = res.data[0].replace(/http/, "https"))
     const picPre = () => {
       const Img = document.createElement("img");
       Img.setAttribute("src", video.pic)
