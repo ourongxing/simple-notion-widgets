@@ -36,7 +36,7 @@ if (video.url) {
       .then(res => res.json())
       .then(res => res.data.picture)
       .then(res => {
-        video.pic = res.replace(/http/, "https")
+        video.pic = res.replace(/http/, "https") + "?time=" + Math.floor(Date.now() / 1000);
       })
     await fetch("https://bili-api.vercel.app/api/v0/acg_video/list?bvid=" + video.bvid)
       .then(res => res.json())
@@ -55,7 +55,7 @@ if (video.url) {
       paras.video = {}
     }
     paras.video.url = video.direct;
-    // paras.video.pic = video.pic;
+    paras.video.pic = video.pic;
     const options = Object.assign({ container: document.getElementById('dplayer') }, paras);
     const dp = await new DPlayer(options)
   })()
