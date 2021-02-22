@@ -36,7 +36,8 @@ if (video.url) {
       .then(res => res.json())
       .then(res => res.data.picture)
       .then(res => {
-        video.pic = res.replace(/http/, "https") + "?time=" + Math.floor(Date.now() / 1000);
+        // video.pic = res.replace(/http/, "https") + "?time=" + Math.floor(Date.now() / 1000);
+        video.pic = res
       })
     await fetch("https://bili-api.vercel.app/api/v0/acg_video/list?bvid=" + video.bvid)
       .then(res => res.json())
