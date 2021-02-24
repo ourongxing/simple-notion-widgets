@@ -10,8 +10,8 @@
     "vitepress": "^0.12.2"
   },
   "scripts": {
-    "dev": "vitepress dev ./",
-    "build": "vitepress build ./ && cp -r music-player ./.vitepress/dist && cp -r video-player ./.vitepress/dist",
-    "serve": "vitepress serve ./"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs && cp -r music-player ./docs/.vitepress/dist && cp -r video-player ./docs/.vitepress/dist",
+    "docs:serve": "vitepress serve docs"
   }
 }
