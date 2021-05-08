@@ -5,20 +5,20 @@ Notion 提供了非常强大且开放的 Embed 功能，但是 Notion 并没有�
 > 基于 [Aplayer](https://github.com/MoePlayer/APlayer) & [MetingJS](https://github.com/metowolf/MetingJS)
 
 ![](./img/1.png)
-只需要 https://simple-notion-widgets.vercel.app/music-player?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
+只需要 https://simple-notion-widgets.vercel.app/music-player/index.html?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
 
 ### 快速开始
 > 你必须在浏览器中使用[ QQ 音乐 ](https://y.qq.com/)或者[ 网易云音乐 ](https://music.163.com/) 来获取这些链接，QQ 音乐可能更简单。
 - https://music.163.com/#/song?id=28754103
-  - https://simple-notion-widgets.vercel.app/music-player?server=netease&type=song&id=28754103
+  - https://simple-notion-widgets.vercel.app/music-player/index.html?server=netease&type=song&id=28754103
 - https://music.163.com/#/playlist?id=60198
-  - https://simple-notion-widgets.vercel.app/music-player?server=netease&type=playlist&id=60198
+  - https://simple-notion-widgets.vercel.app/music-player/index.html?server=netease&type=playlist&id=60198
 - https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html
-  - https://simple-notion-widgets.vercel.app/music-player?auto=https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html
+  - https://simple-notion-widgets.vercel.app/music-player/index.html?auto=https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html
 - https://y.qq.com/n/yqq/playlist/7888484143.html
-  - https://simple-notion-widgets.vercel.app/music-player?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
-- 你也可以使用音乐资源，只要可以被访问即可。如果链接过长或出现了`&?`之类的符号，需要使用 [suowo.cn](https://suowo.cn/) 来缩短链接.
-  - https://simple-notion-widgets.vercel.app/music-player?name=rainymood&artist=rainymood&url=https://rainymood.com/audio1110/0.m4a&cover=https://rainymood.com/i/badge.jpg
+  - https://simple-notion-widgets.vercel.app/music-player/index.html?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
+- 你也可以使用自己的音乐资源，只要可以被访问即可。如果链接过长或出现了`&?`之类的符号，需要使用 [suowo.cn](https://suowo.cn/) 来缩短链接.
+  - https://simple-notion-widgets.vercel.app/music-player/index.html?name=rainymood&artist=rainymood&url=https://rainymood.com/audio1110/0.m4a&cover=https://rainymood.com/i/badge.jpg
 
 ### 选项
 
