@@ -5,20 +5,20 @@ Notion 提供了非常强大且开放的 Embed 功能，但是 Notion 并没有�
 > 基于 [Aplayer](https://github.com/MoePlayer/APlayer) & [MetingJS](https://github.com/metowolf/MetingJS)
 
 ![](./img/1.png)
-只需要 https://simple-notion-widgets.vercel.app/music-player?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
+只需要 https://simple-notion-widgets.vercel.app/music-player/index.html?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
 
 ### 快速开始
 > You must use [QQ Music](https://y.qq.com/) or [NetEase Cloud Music](https://music.163.com/) on Web to get the URL.  Using QQ music may be easier.
 - https://music.163.com/#/song?id=28754103
-  - https://simple-notion-widgets.vercel.app/music-player?server=netease&type=song&id=28754103
+  - https://simple-notion-widgets.vercel.app/music-player/index.html?server=netease&type=song&id=28754103
 - https://music.163.com/#/playlist?id=60198
-  - https://simple-notion-widgets.vercel.app/music-player?server=netease&type=playlist&id=60198
+  - https://simple-notion-widgets.vercel.app/music-player/index.html?server=netease&type=playlist&id=60198
 - https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html
-  - https://simple-notion-widgets.vercel.app/music-player?auto=https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html
+  - https://simple-notion-widgets.vercel.app/music-player/index.html?auto=https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html
 - https://y.qq.com/n/yqq/playlist/7888484143.html
-  - https://simple-notion-widgets.vercel.app/music-player?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
+  - https://simple-notion-widgets.vercel.app/music-player/index.html?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
 - If you want to use paid songs, you may need to find resources yourself. **Any links are not allowed to appear \ and &**, otherwise you need to use shortening link services, such as [suowo.cn](https://suowo.cn/).
-  - https://simple-notion-widgets.vercel.app/music-player?name=rainymood&artist=rainymood&url=https://rainymood.com/audio1110/0.m4a&cover=https://rainymood.com/i/badge.jpg
+  - https://simple-notion-widgets.vercel.app/music-player/index.html?name=rainymood&artist=rainymood&url=https://rainymood.com/audio1110/0.m4a&cover=https://rainymood.com/i/badge.jpg
 
 ### 选项
 
