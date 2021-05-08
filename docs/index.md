@@ -1,24 +1,24 @@
-Notion 提供了非常强大且开放的 Embed 功能，但是 Notion 并没有针对国内的音乐平台，视频平台进行优化，使得无法嵌入其中。为了解决这个问题，所以我基于 Aplayer 和 Dplayer 做了两个小组件，可以自动解析 QQ 音乐，网易云音乐的歌曲，专辑，以及歌单，还可以解析 B 站 1080P 的视频，并提供了众多设置选项。
+Notion 提供了非常强大且开放的 Embed 功能，但是 Notion 并没有针对国内的音乐平台，视频平台进行优化，使得无法嵌入其中。为了解决这个问题，所以我基于 Aplayer 和 Dplayer 做了两个小组件，可以自动解析 QQ 音乐，网易云音乐的歌曲，专辑，以及歌单，还可以解析 B 站 1080P 的视频，并提供了众多设置选项（视频播放器暂时不开放）。
 
 ## Music Player
 
 > 基于 [Aplayer](https://github.com/MoePlayer/APlayer) & [MetingJS](https://github.com/metowolf/MetingJS)
 
 ![](./img/1.png)
-只需要 https://simple-notion-widgets.vercel.app/music-player/index.html?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
+只需要 https://simple-notion-widgets.vercel.app/music-player?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
 
 ### 快速开始
-> You must use [QQ Music](https://y.qq.com/) or [NetEase Cloud Music](https://music.163.com/) on Web to get the URL.  Using QQ music may be easier.
+> 你必须在浏览器中使用[ QQ 音乐 ](https://y.qq.com/)或者[ 网易云音乐 ](https://music.163.com/) 来获取这些链接，QQ 音乐可能更简单。
 - https://music.163.com/#/song?id=28754103
-  - https://simple-notion-widgets.vercel.app/music-player/index.html?server=netease&type=song&id=28754103
+  - https://simple-notion-widgets.vercel.app/music-player?server=netease&type=song&id=28754103
 - https://music.163.com/#/playlist?id=60198
-  - https://simple-notion-widgets.vercel.app/music-player/index.html?server=netease&type=playlist&id=60198
+  - https://simple-notion-widgets.vercel.app/music-player?server=netease&type=playlist&id=60198
 - https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html
-  - https://simple-notion-widgets.vercel.app/music-player/index.html?auto=https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html
+  - https://simple-notion-widgets.vercel.app/music-player?auto=https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html
 - https://y.qq.com/n/yqq/playlist/7888484143.html
-  - https://simple-notion-widgets.vercel.app/music-player/index.html?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
-- If you want to use paid songs, you may need to find resources yourself. **Any links are not allowed to appear \ and &**, otherwise you need to use shortening link services, such as [suowo.cn](https://suowo.cn/).
-  - https://simple-notion-widgets.vercel.app/music-player/index.html?name=rainymood&artist=rainymood&url=https://rainymood.com/audio1110/0.m4a&cover=https://rainymood.com/i/badge.jpg
+  - https://simple-notion-widgets.vercel.app/music-player?auto=https://y.qq.com/n/yqq/playlist/7888484143.html
+- 你也可以使用音乐资源，只要可以被访问即可。如果链接过长或出现了`&?`之类的符号，需要使用 [suowo.cn](https://suowo.cn/) 来缩短链接.
+  - https://simple-notion-widgets.vercel.app/music-player?name=rainymood&artist=rainymood&url=https://rainymood.com/audio1110/0.m4a&cover=https://rainymood.com/i/badge.jpg
 
 ### 选项
 
