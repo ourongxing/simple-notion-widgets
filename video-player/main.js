@@ -31,6 +31,7 @@ if (video.url) {
   if (video.bvid.indexOf("/") != -1) {
     video.bvid = video.bvid.substring(0, video.bvid.length - 1)
   }
+  // https://bili-api.vercel.app/api/v0/video_info?bvid=BV18b4y1U7By
   (async () => {
     await fetch("https://bili-api.vercel.app/api/v0/video_info?bvid=" + video.bvid)
       .then(res => res.json())
@@ -45,23 +46,6 @@ if (video.url) {
     await fetch(`https://bili-api.vercel.app/api/v0/acg_video/playurl?bvid=${video.bvid}&cid=${video.cid}&type=mp4`)
       .then(res => res.json())
       .then(res => video.direct = res.data[0].url)
-    const picPre = () => {
-      const Img = document.createElement("img");
-      Img.setAttribute("src", video.pic);
-      Img.style.display = "none";
-      document.body.appendChild(Img)
-    }
-    await picPre();
-    if (!paras.video) {
-      paras.video = {}
-    }
-    paras.video.url = video.direct;
-    paras.video.pic = video.pic;
-    const options = Object.assign({ container: document.getElementById('dplayer') }, paras);
-    const dp = await new DPlayer(options)
+    window.location.href=video.direct;
   })()
-}
-else {
-  const options = Object.assign({ container: document.getElementById('dplayer') }, paras);
-  const dp = new DPlayer(options)
 }
