@@ -19,7 +19,7 @@ for (let i = 0; i < vars.length; i++) {
   else paras[pair[0]] = pair[1];
 }
 if (video.url && /.mp4/.test(video.url)) {
-  video.url.replace(/.mp4/,"")
+  video.url = video.url.replace(/.mp4/,"")
   if (video.url.indexOf("?p") != -1) {
     video.bvid = video.url.split("video/")[1].split("?p=")[0];
     video.page = parseInt(video.url.split("video/")[1].split("?p=")[1]) - 1;
