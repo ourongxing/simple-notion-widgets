@@ -44,11 +44,11 @@ module.exports = async (req, res) => {
         await fetch(`https://bili-api.vercel.app/api/v0/acg_video/playurl?bvid=${video.bvid}&cid=${video.cid}&type=mp4`)
           .then(res => res.json())
           .then(res => video.direct = res.data[0].url)
+        res.writeHead(302, {
+          Location: video.direct
+        });
+        res.end();
       })()
-      res.writeHead(302, {
-        Location: video.direct
-      });
-      res.end();
     }
 
   }
