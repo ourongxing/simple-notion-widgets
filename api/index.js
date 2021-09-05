@@ -1,9 +1,10 @@
+import fetch from "node-fetch"
 module.exports = async (req, res) => {
   const video = {};
   const paras = {};
   const url = req.query.url;
   if (!url) {
-    res.send("名字呢？");
+    res.send("B 站链接呢");
     res.end();
   } else {
     video.url = url
