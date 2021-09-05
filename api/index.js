@@ -1,7 +1,6 @@
-import fetch from "node-fetch";
-export default async (req, res) => {
+const fetch = require("node-fetch");
+module.exports = async (req, res) => {
   const video = {};
-  const paras = {};
   const url = req.query.url;
   if (!url) {
     res.send("B 站链接呢");

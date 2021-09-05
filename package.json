@@ -2,7 +2,6 @@
   "name": "Simple-Notion-Widgets",
   "version": "1.0.0",
   "description": "Simple notion widgets with Vercel",
-  "main": "index.js",
   "repository": "git@github.com:ourongxing/Simple-Notion-Widgets.git",
   "author": "ourongxing <orongxing@gmail.com>",
   "license": "MIT",
