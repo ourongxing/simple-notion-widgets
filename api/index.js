@@ -1,5 +1,5 @@
-const fetch = require("node-fetch")
-module.exports = async (req, res) => {
+import fetch from "node-fetch";
+export default async (req, res) => {
   const video = {};
   const paras = {};
   const url = req.query.url;
