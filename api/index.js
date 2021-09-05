@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
     res.send("名字呢？");
     res.end();
   } else {
-    vodeo.url = url
+    video.url = url
     if (video.url.indexOf("?p") != -1) {
       video.bvid = video.url.split("video/")[1].split("?p=")[0];
       video.page = parseInt(video.url.split("video/")[1].split("?p=")[1]) - 1;
