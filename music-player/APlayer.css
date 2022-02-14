@@ -719,7 +719,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f3437",endColorstr="#00212121",GradientType=0);
 }
 .aplayer.aplayer-dark .aplayer-lrc:after {
-  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, #383d41);
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, #2c2f32bf);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00212121",endColorstr="#cc212121",GradientType=0);
 }
 .aplayer.aplayer-dark .aplayer-lrc p {
