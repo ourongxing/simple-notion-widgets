@@ -1,1 +1,14 @@
-{}
+{
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/:path*/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://busiyi.notion.site/Simple-Notion-Widgets-423345bc170146fb978f378a582bf78d"
+    }
+  ]
+}

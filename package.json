@@ -1,19 +1,8 @@
 {
-  "name": "Simple-Notion-Widgets",
+  "name": "simple-notion-widgets",
   "version": "1.0.0",
   "description": "Simple notion widgets with Vercel",
   "repository": "git@github.com:ourongxing/Simple-Notion-Widgets.git",
   "author": "ourongxing <orongxing@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "vitepress": "^0.12.2"
-  },
-  "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs && cp -r music-player ./docs/.vitepress/dist && cp -r video-player ./docs/.vitepress/dist && cp -r api ./docs/.vitepress/dist && cp -r vercel.json ./docs/.vitepress/dist",
-    "docs:serve": "vitepress serve docs"
-  },
-  "dependencies": {
-    "node-fetch": "^3.0.0"
-  }
+  "license": "MIT"
 }
