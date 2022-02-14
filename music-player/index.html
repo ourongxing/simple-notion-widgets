@@ -13,7 +13,6 @@
     .aplayer {
       margin: 0;
       padding: 0;
-      background-color: white;
     }
   </style>
 </head>
@@ -27,6 +26,7 @@
     if (params.has("dark")) {
       params.set("dark-mode", true)
       params.delete("dark")
+      document.body.style.backgroundColor = "#2f3437"
     }
     for (const [key, value] of params)
       meting.setAttribute(key, value)

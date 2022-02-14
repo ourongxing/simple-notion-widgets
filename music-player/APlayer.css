@@ -659,7 +659,7 @@
   fill: #000;
 }
 .aplayer.aplayer-dark {
-  background: #212121;
+  background: #2f3437;
 }
 .aplayer.aplayer-dark.aplayer-withlist .aplayer-info {
   border-bottom-color: #5c5c5c;
@@ -668,10 +668,10 @@
   border-color: #5c5c5c;
 }
 .aplayer.aplayer-dark .aplayer-body {
-  background-color: #212121;
+  background-color: #2f3437;
 }
 .aplayer.aplayer-dark .aplayer-info {
-  border-top-color: #212121;
+  border-top-color: #2f3437;
 }
 .aplayer.aplayer-dark .aplayer-info .aplayer-music .aplayer-author,
 .aplayer.aplayer-dark .aplayer-info .aplayer-music .aplayer-title {
@@ -689,7 +689,7 @@
   fill: #eee;
 }
 .aplayer.aplayer-dark .aplayer-list {
-  background-color: #212121;
+  background-color: #2f3437;
 }
 .aplayer.aplayer-dark .aplayer-list::-webkit-scrollbar-thumb {
   background-color: #999;
@@ -715,15 +715,11 @@
   text-shadow: -1px -1px 0 #666;
 }
 .aplayer.aplayer-dark .aplayer-lrc:before {
-  background: linear-gradient(180deg, #212121 0, hsla(0, 0%, 100%, 0));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#212121",endColorstr="#00212121",GradientType=0);
+  background: linear-gradient(180deg, #2f3437 0, hsla(0, 0%, 100%, 0));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f3437",endColorstr="#00212121",GradientType=0);
 }
 .aplayer.aplayer-dark .aplayer-lrc:after {
-  background: linear-gradient(
-    180deg,
-    hsla(0, 0%, 100%, 0) 0,
-    rgba(33, 33, 33, 0.8)
-  );
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, #383d41);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00212121",endColorstr="#cc212121",GradientType=0);
 }
 .aplayer.aplayer-dark .aplayer-lrc p {
