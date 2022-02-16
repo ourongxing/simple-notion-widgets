@@ -1,8 +1,0 @@
-{
-  "name": "simple-notion-widgets",
-  "version": "1.0.0",
-  "description": "Simple notion widgets with Vercel",
-  "repository": "git@github.com:ourongxing/Simple-Notion-Widgets.git",
-  "author": "ourongxing <orongxing@gmail.com>",
-  "license": "MIT"
-}

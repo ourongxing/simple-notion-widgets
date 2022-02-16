@@ -1,5 +1,2 @@
 node_modules/
-docs/.vitepress/dist/
-.pnpm-debug.log
-
 .vercel
