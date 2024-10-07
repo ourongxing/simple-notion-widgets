@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./APlayer.css" />
+    <style type="text/css">
+      html,
+      body,
+      .aplayer {
+        margin: 0;
+        padding: 0;
+      }
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Music Player</title>
-  <link rel="stylesheet" href="./APlayer.css">
-  <style type="text/css">
-    html,
-    body,
-    .aplayer {
-      margin: 0;
-      padding: 0;
-    }
-  </style>
-</head>
+      .dark body {
+        background-color: #191919;
+      }
+    </style>
+  </head>
 
-<body>
-
-  <script src="./APlayer.min.js"></script>
-  <script src="./Meting_xizeyoupan.min.js"></script>
-  <script charset="utf-8">
-    const params = new URLSearchParams(document.location.search ? document.location.search : "server=tencent&type=playlist&id=7888484143")
-    const meting = document.createElement("meting-js");
-    if (params.has("dark")) {
-      params.set("dark-mode", true)
-      params.delete("dark")
-      document.body.style.backgroundColor = "#191919"
-    }
-    for (const [key, value] of params)
-      meting.setAttribute(key, value)
-    document.body.appendChild(meting)
-  </script>
-</body>
-
+  <body>
+    <script src="./APlayer.min.js"></script>
+    <script src="./Meting_xizeyoupan.min.js"></script>
+    <script charset="utf-8">
+      const params = new URLSearchParams(
+        document.location.search
+          ? document.location.search
+          : "server=tencent&type=playlist&id=7888484143"
+      )
+      const meting = document.createElement("meting-js")
+      function setDark(status = true) {
+        document.querySelector("html")?.classList.toggle("dark", status)
+      }
+      const theme = params.get("theme")
+      switch (theme) {
+        case "dark":
+          setDark()
+          break
+        case "light":
+          setDark(false)
+          break
+        default: {
+          const media = window.matchMedia("(prefers-color-scheme: dark)")
+          setDark(media.matches)
+          media.addEventListener("change", (e) => setDark(e.matches))
+        }
+      }
+      for (const [key, value] of params) meting.setAttribute(key, value)
+      document.body.appendChild(meting)
+    </script>
+  </body>
 </html>
