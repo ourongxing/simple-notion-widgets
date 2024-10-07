@@ -33,7 +33,7 @@
       function setDark(status = true) {
         document.querySelector("html")?.classList.toggle("dark", status)
       }
-      const theme = params.get("theme")
+      const theme = params.get("colorscheme")
       switch (theme) {
         case "dark":
           setDark()
